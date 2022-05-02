@@ -1,0 +1,7 @@
+1.Header
+2.Navigation
+3.Breadcrumb
+4.Sidebar
+5.Slider
+6.Content
+7.Footer

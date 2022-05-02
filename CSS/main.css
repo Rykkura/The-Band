@@ -1,0 +1,457 @@
+/*Reset CSS*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+    line-height: 1.5;
+    font-size: 15px;
+}
+html{
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Phân tích từng phần
+1.Vị trí 
+2.Kích Thước
+3.Màu sắc
+4.Kiểu dáng
+ */
+
+
+
+#header {
+    position: fixed;
+    height: 46px;
+    background-color: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    
+} 
+#nav {
+    display: inline-block;
+}
+#nav, .subnav {
+    list-style-type: none;
+}
+#nav > li {
+    display: inline-block;
+    
+}
+#nav li {
+    position: relative;
+
+}
+#nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+}
+#nav li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+#nav li:hover .subnav {
+    display: block;
+}
+#nav > li:hover > a,
+#nav .subnav li:hover a{
+    color: black;
+    background-color: #ccc;
+}
+#nav .subnav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0,0,0, 0.3);
+}
+#nav .subnav a {
+    color:  #000;
+    padding: 0 18px;
+    line-height: 38px;
+}
+#nav .down-icon {
+    font-size: 12px;
+}
+#header .mobile-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#header .mobile-menu-btn,
+#header .search-btn {
+    float: right;
+}
+#header .mobile-menu-btn:hover {
+    background-color: #ccc;
+    
+
+}
+#header .mobile-menu-btn:hover .menu-icon {
+
+    color: #000;    
+
+}
+#header .search-btn:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+#header .menu-icon,
+#header .search-icon {
+    color: #fff;
+    font-size: 14px;
+    line-height: 46px;
+    padding: 16px 24px;
+}
+#slider {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/Project/Web The Band/assets/img/chicago.jpg') top center / cover no-repeat;
+    
+    z-index: -1;
+}
+#slider .text-content {
+    position: absolute;
+    bottom: 47px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+#slider .text-heading {
+    font-weight: 350;
+    font-size: 24px;
+    margin: 10px;
+}
+
+#slider .text-description {
+    font-weight: 600;
+    font-size: 15px;
+} 
+
+    
+
+#content .content-section {
+    max-width: 800px;
+    padding: 64px 16px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+#content .section-heading {
+    text-align: center;
+    letter-spacing: 4px;
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+#content .section-slogan {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 15px;
+    opacity: 0.6;
+    
+}
+#content .about {
+    margin: 15px 0;
+    font-size: 15px;
+    text-align: justify;
+    
+    
+}
+#content .profile {
+    padding: 32px 0;
+    font-size: 15px;
+    
+    overflow: hidden; /*sửa lỗi khi sử dụng float khiến div ko bao quanh các thẻ con của nó */
+}
+#content .list-profile {
+    float: left;
+    width: calc(100%/3);
+    text-align: center;
+}
+#content .name-profile {
+    
+    font-size: 15px;
+    margin: 15px 0;
+}
+#content .img-profile  {
+    width: 60%;
+    margin-bottom: 16px;
+    border-radius: 4px;
+}
+#content .background {
+    background-color: #000;
+    color: #fff;
+}
+#content .list {
+    list-style-type: none;
+}
+#content .item {
+    background-color: #fff;
+    color: #757575;
+    border-bottom: 1px solid #ddd;
+    padding: 8px 16px;
+    font-size: 15px;
+    line-height: 22.5px;
+    
+}
+#content .tag {
+    background-color: #f44336; 
+    color: #fff;
+    margin-left: 16px;
+    padding: 0 8px;
+    text-align: center;
+    font-size: 15px;
+    display: inline-block;
+}
+#content .tag-number {
+    float: right;
+    border-radius: 50%; /*bo góc thành hình tròn*/
+    background-color: #000;
+    color: #fff;
+    margin-right: 16px;
+    padding: 0 8px;
+}
+#content .tickets{
+    margin: 0 -16px;
+    padding: 32px 8px;
+    overflow: hidden; /*sửa lỗi khi sử dụng float khiến div ko bao quanh các thẻ con của nó */
+
+}
+#content .tickets-card{
+    float: left;
+    width: calc(100%/3);
+    
+    padding: 0 8px;
+    margin-bottom: 16px;
+}
+#content .img-city{
+    width: 100%;
+    vertical-align: middle;
+}
+#content .tickets-information{
+    background-color: #fff;
+    color: #000;
+    padding: 0.1rem 16px;
+    font-size: 15px;
+}
+#content .city-name{
+    margin: 15px 0;
+    font-weight: bolder;
+}
+#content .times{
+    opacity: 0.6;
+    margin: 15px 0;
+}
+#content .comment{
+    margin: 15px 0;
+    
+}
+#content #button{
+    background-color: #000;
+    color: #FFF;
+    border:none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 15px;
+}
+#content .button-tickets{
+    margin-bottom: 16px;
+}
+#content #button:hover{
+    background-color:#ccc;
+    color: #000;
+}
+#content .contact-information{
+    padding: 32px 0;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+}
+#content .address{
+    margin-bottom: 16px;
+    float:left;
+    width: 50%;
+    font-size: 18px;
+    
+
+}
+#content .place,
+#content .phone,
+#content .Email{
+    width: 30px;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+#content .place::before,
+#content .phone::before,
+#content .Email::before{
+    margin-right: 10px;
+    font-size: 18px;
+}
+#content .setbox{
+    float: left;
+    width: 50%;
+    
+}
+#content .inline-box{
+    width: 100%;
+    display: block;
+}
+#content .name-box{
+    float:left;
+    border: 1px solid #ccc;
+    padding: 8px;
+    margin-right: 10px;
+    width: 46%;
+}
+#content .email-box{
+    padding: 8px;
+    width: 48.5%;
+    margin-left:10px;
+    border: 1px solid #ccc;
+
+}
+#content .message-box{
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+
+}
+.button-send{
+    float: right;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0, 0.3);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.open{
+    display: flex;
+}
+.modal-container{
+    background-color: #fff;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+    position: relative;
+    animation: modalFadeIn ease 0.4s;
+}
+
+.modal-header{
+    background-color: #009688;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+    letter-spacing: 4px;
+    
+}
+i.ti-bag {
+    font-size: 30px;
+    padding-right: 10px;
+}
+.modal-close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 16px;
+    color: #fff;
+    opacity: 0.9;
+}
+.modal-close:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
+.modal-label{
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    
+}
+.modal-body{
+    padding: 16px;
+}
+
+.modal-input{
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 40px;
+}
+.modal-button{
+    display: block;
+    border: none;
+    width: 100%;
+    background-color: #009688;
+    padding: 16px;
+    margin-top: 16px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.modal-footer{
+    padding: 20px;
+    float: right;
+    margin-bottom: 10px;
+}
+.modal-footer a{
+    color: #2196F3;
+}
+
+#content .map{
+    width: 100%;
+    filter: grayscale(50%);
+}
+
+
+#footer {
+    background-color: #fff;
+    color: #000;
+    height: 216px;
+    padding: 64px 0;
+    font-size: 24px;
+    text-align: center;
+    opacity: 0.5;
+}
+
+
+#footer i{
+    font-size: 22px;
+    
+}
+#footer .fa{
+    font-size: 25px;
+}
+#footer .footer-content{
+    padding: 20px ;
+}
+
+@keyframes modalFadeIn {
+    from{
+        opacity: 0;
+        transform: translateY(-130px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -110,8 +110,6 @@ html{
 #slider {
     position: relative;
     margin-top: 46px;
-    
-    
     z-index: -1;
 }
 
